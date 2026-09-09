@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "model": "Camry",
+    "price": "31000.00",
+    "quantity": 1
+  },
+  {
+    "id": 2,
+    "model": "X5",
+    "price": "47000.00",
+    "quantity": 2
+  }
+]

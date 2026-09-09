@@ -1,0 +1,131 @@
+[
+  {
+    "id": 1,
+    "dealership": "Tbilisi Center",
+    "buyer": "Anna",
+    "model": "Camry",
+    "price": "31000.00",
+    "quantity": 1,
+    "date": "2026-09-01",
+    "is_active": true
+  },
+  {
+    "id": 2,
+    "dealership": "Batumi Auto",
+    "buyer": "Giorgi",
+    "model": "X5",
+    "price": "47000.00",
+    "quantity": 1,
+    "date": "2026-09-01",
+    "is_active": true
+  },
+  {
+    "id": 3,
+    "dealership": "Tbilisi Center",
+    "buyer": "Anna",
+    "model": "A6",
+    "price": "42000.00",
+    "quantity": 1,
+    "date": "2026-09-02",
+    "is_active": true
+  },
+  {
+    "id": 4,
+    "dealership": "Tbilisi Center",
+    "buyer": "Nika",
+    "model": "Camry",
+    "price": "30000.00",
+    "quantity": 2,
+    "date": "2026-09-03",
+    "is_active": true
+  },
+  {
+    "id": 5,
+    "dealership": "Batumi Auto",
+    "buyer": "Mariam",
+    "model": "Camry",
+    "price": "32000.00",
+    "quantity": 1,
+    "date": "2026-09-03",
+    "is_active": true
+  },
+  {
+    "id": 6,
+    "dealership": "Kutaisi Cars",
+    "buyer": "Giorgi",
+    "model": "Civic",
+    "price": "28000.00",
+    "quantity": 2,
+    "date": "2026-09-04",
+    "is_active": true
+  },
+  {
+    "id": 7,
+    "dealership": "Batumi Auto",
+    "buyer": "Anna",
+    "model": "X5",
+    "price": "46000.00",
+    "quantity": 1,
+    "date": "2026-09-04",
+    "is_active": true
+  },
+  {
+    "id": 8,
+    "dealership": "Tbilisi Center",
+    "buyer": "Dato",
+    "model": "Corolla",
+    "price": "-1.00",
+    "quantity": 1,
+    "date": "2026-09-05",
+    "is_active": true
+  },
+  {
+    "id": 9,
+    "dealership": "Batumi Auto",
+    "buyer": "Elene",
+    "model": "A6",
+    "price": "41000.00",
+    "quantity": 0,
+    "date": "2026-09-05",
+    "is_active": true
+  },
+  {
+    "id": 10,
+    "dealership": "Kutaisi Cars",
+    "model": "Camry",
+    "price": "29000.00",
+    "quantity": 1,
+    "date": "2026-09-06",
+    "is_active": true
+  },
+  {
+    "id": 11,
+    "dealership": "Tbilisi Center",
+    "buyer": "Luka",
+    "model": "Civic",
+    "price": "not-a-number",
+    "quantity": 1,
+    "date": "2026-09-06",
+    "is_active": true
+  },
+  {
+    "id": 7,
+    "dealership": "Kutaisi Cars",
+    "buyer": "Saba",
+    "model": "Corolla",
+    "price": "27000.00",
+    "quantity": 1,
+    "date": "2026-09-07",
+    "is_active": true
+  },
+  {
+    "id": 12,
+    "dealership": "Tbilisi Center",
+    "buyer": "Tako",
+    "model": "Camry",
+    "price": "30500.00",
+    "quantity": 1,
+    "date": "2026-09-07",
+    "is_active": false
+  }
+]
