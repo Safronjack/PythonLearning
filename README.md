@@ -726,6 +726,15 @@ print("DEBUG:", price, type(price))
 
 ### Неделя 9. Основа Django
 
+> Модуль подготовлен заранее и заблокирован до полного зачёта недель 0–8.
+
+Подробные материалы:
+
+- [порядок работы недели 9](week_09_django_foundation/README.md);
+- [полный конспект](week_09_django_foundation/THEORY.md);
+- [практика и критерии](week_09_django_foundation/PRACTICE.md);
+- [будущий журнал оценки](week_09_django_foundation/ASSESSMENT.md).
+
 - project и app, settings, URL dispatcher, views, templates и admin;
 - жизненный цикл запроса;
 - middleware и signals: использовать сигналы только для действительно побочных реакций;
@@ -733,9 +742,16 @@ print("DEBUG:", price, type(price))
 - конфигурация через переменные окружения;
 - встроенные механизмы безопасности Django.
 
-Практика: поднять проект с PostgreSQL и приложениями `accounts`, `catalog`, `dealerships`, `suppliers`, `trading`, `promotions`, `analytics`, `common`.
+Практика: семь последовательных дней в одном накапливаемом проекте — от структуры project/apps и безопасных settings до custom user перед первой миграцией, URL/views, templates/admin, request-id middleware, обоснованного signal, system checks и smoke tests. Итогом станет воспроизводимый Django Foundation с PostgreSQL и приложениями `accounts`, `catalog`, `dealerships`, `suppliers`, `trading`, `promotions`, `analytics`, `common`, проверенный по 25 сценариям.
+
+Результат: создан безопасный и объяснимый каркас итогового проекта, готовый к предметным models и ORM недели 10, но ещё не перегруженный DRF, JWT, Celery, Redis и Docker.
 
 ### Неделя 10. Django ORM
+
+- [полный модуль недели](week_10_django_orm/README.md);
+- [теория](week_10_django_orm/THEORY.md);
+- [подробная практика и критерии](week_10_django_orm/PRACTICE.md);
+- [будущий журнал оценки](week_10_django_orm/ASSESSMENT.md).
 
 - модели, миграции и data migrations;
 - QuerySet, manager и custom QuerySet;
@@ -747,7 +763,16 @@ print("DEBUG:", price, type(price))
 - Django ORM и SQLAlchemy: сильные стороны и различия;
 - SQLAlchemy Core/ORM, `Session`, `flush` и `commit`, Alembic — пока обзорно.
 
+Практика: семь последовательных дней в продолжении Django Foundation — от проектирования профилей, балансов, `CarMake`, `CarModel`, характеристик и предпочтений до явных M2M-моделей остатков/каталога поставщиков, истории денег и товара, staged data migration, предметных QuerySet, `F`/`Q`/агрегатов, измеренного устранения N+1 и конкурентно безопасной продажи через `transaction.atomic()` и `select_for_update()`.
+
+Результат: воспроизводимый ORM-прототип предметной области на PostgreSQL, проверенный по 30 позитивным, граничным, ошибочным и конкурентным сценариям. Неделя подготовлена заранее и остаётся заблокированной до полного зачёта недели 9. SQLAlchemy и Alembic изучаются обзорно и не подключаются к Django-проекту.
+
 ### Неделя 11. Первый вертикальный сценарий
+
+- [полный модуль недели](week_11_first_vertical_slice/README.md);
+- [теория](week_11_first_vertical_slice/THEORY.md);
+- [подробная практика и критерии](week_11_first_vertical_slice/PRACTICE.md);
+- [будущий журнал оценки](week_11_first_vertical_slice/ASSESSMENT.md).
 
 Реализовать путь целиком:
 
@@ -758,11 +783,20 @@ print("DEBUG:", price, type(price))
 
 Критерий этапа: запросы можно объяснить через SQL, а количество запросов измеряется Django Debug Toolbar или тестом.
 
+Практика: семь последовательных дней — от контракта vertical slice и безопасного staff admin до атомарной закупки через один service/management command, optimized selector, обычного Django JSON endpoint и regression suite. Query budget измеряется для N=2 и N=20 вокруг полной materialization, а не только вокруг создания ленивого QuerySet.
+
+Результат: воспроизводимый путь `admin → procurement → inventory/history → selector → GET /api/v1/catalog/`, проверенный по 32 сценариям. DRF, JWT, Celery, brokers и Redis намеренно не вводятся раньше соответствующих недель.
+
 ---
 
 ## Этап 5. DRF, аутентификация и безопасность — недели 12–14
 
 ### Неделя 12. Django REST Framework
+
+- [полный модуль недели](week_12_django_rest_framework/README.md);
+- [теория](week_12_django_rest_framework/THEORY.md);
+- [подробная практика и критерии](week_12_django_rest_framework/PRACTICE.md);
+- [будущий журнал оценки](week_12_django_rest_framework/ASSESSMENT.md).
 
 - Serializer и ModelSerializer;
 - field-, object- и service-level validation;
@@ -772,7 +806,9 @@ print("DEBUG:", price, type(price))
 - единый формат ошибок;
 - OpenAPI/Swagger через `drf-spectacular`.
 
-Практика: CRUD для справочников и безопасные read-only endpoints для каталога.
+Практика: семь последовательных дней — от DRF Request/Response, parsers/renderers и serializer contracts до сравнения API abstractions, versioned routers, public read-only catalog, staff-only CRUD справочников, typed filters, Unicode search, allowlisted ordering, bounded pagination, единого error envelope и runtime↔OpenAPI audit.
+
+Результат: документированный API v1, проверенный по 36 позитивным, граничным, ошибочным, security- и performance-сценариям. `CarMake` и `CarModel` доступны для staff CRUD с деактивацией вместо физического удаления; каталог открыт только на чтение. Остатки, балансы, закупки и история намеренно не получают generic writable ViewSet, чтобы нельзя было обойти services и транзакционные инварианты недели 11. JWT, регистрация и детальная ролевая модель остаются неделям 13–14.
 
 ### Неделя 13. Пользователи и email-процессы
 
