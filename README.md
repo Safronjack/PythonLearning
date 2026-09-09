@@ -697,6 +697,15 @@ print("DEBUG:", price, type(price))
 
 ### Неделя 8. Внутренности PostgreSQL и масштабирование
 
+> Модуль подготовлен заранее и заблокирован до полного зачёта недель 0–7.
+
+Подробные материалы:
+
+- [порядок работы недели 8](week_08_postgresql_internals_scaling/README.md);
+- [полный конспект](week_08_postgresql_internals_scaling/THEORY.md);
+- [практика и критерии](week_08_postgresql_internals_scaling/PRACTICE.md);
+- [будущий журнал оценки](week_08_postgresql_internals_scaling/ASSESSMENT.md).
+
 - MVCC, WAL, `VACUUM`, TOAST;
 - функции, процедуры и триггеры — применять только при понятной причине;
 - partitioning и sharding;
@@ -704,6 +713,10 @@ print("DEBUG:", price, type(price))
 - репликация, шардирование и партиционирование: не смешивать понятия;
 - PostgreSQL и MySQL: практические отличия обзорно;
 - PostGIS — прочитать и решить, нужен ли он для географического поиска; для простого поля страны достаточно `django-countries`.
+
+Практика: семь последовательных дней — от наблюдения tuple versions/snapshots и безопасного vacuum/WAL/TOAST lab до database routines, range partitioning и architecture decisions по replication, sharding, CAP/PACELC, MySQL и PostGIS. Итогом станет PostgreSQL readiness audit с 30 проверяемыми сценариями и явными условиями пересмотра решений перед началом Django.
+
+Результат: внутренние механизмы PostgreSQL связаны с эксплуатационными рисками проекта, а partitioning, replication, sharding и PostGIS вводятся только при доказанной необходимости.
 
 Критерий этапа: схема проекта имеет ключи, ограничения, индексы и объяснимые транзакционные границы.
 
