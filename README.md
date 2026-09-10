@@ -812,6 +812,11 @@ print("DEBUG:", price, type(price))
 
 ### Неделя 13. Пользователи и email-процессы
 
+- [полный модуль недели](week_13_auth_email_jwt/README.md);
+- [теория](week_13_auth_email_jwt/THEORY.md);
+- [подробная практика и критерии](week_13_auth_email_jwt/PRACTICE.md);
+- [будущий журнал оценки](week_13_auth_email_jwt/ASSESSMENT.md).
+
 - регистрация;
 - подтверждение email;
 - вход и обновление JWT через SimpleJWT;
@@ -819,6 +824,10 @@ print("DEBUG:", price, type(price))
 - изменение email и логина только после подтверждения нового адреса;
 - срок жизни, одноразовость и безопасное хранение токенов;
 - throttling для чувствительных endpoints.
+
+Практика: семь последовательных дней — от state machine, threat checklist и хешируемых action tokens до регистрации с Django password validators, подтверждения email, JWT rotation/blacklist/logout, смены и сброса пароля, подтверждаемой смены email/login, scoped throttling, enumeration-проверок и OpenAPI-аудита.
+
+Результат: воспроизводимый identity API, проверенный по 42 позитивным, граничным, replay-, ошибочным и abuse-сценариям. Пароли хранятся только через Django password API; verification/reset/change tokens имеют отдельный purpose, TTL, digest и atomic single-use; JWT выдаётся только active+verified пользователю. Полная ролевая и object-level авторизация остаётся неделе 14.
 
 ### Неделя 14. Авторизация
 

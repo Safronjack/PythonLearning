@@ -66,6 +66,10 @@
 
 # День 1. MVCC и snapshots
 
+## Документация
+
+- [PostgreSQL: Introduction to MVCC](https://www.postgresql.org/docs/current/mvcc-intro.html) — конкурентный доступ через версии строк и снимки данных.
+
 ## Паспорт задания
 
 - **Цель:** наблюдать версии строк и snapshots и связать их с видимостью данных между транзакциями.
@@ -171,6 +175,10 @@
 
 # День 2. Vacuum, autovacuum, freeze и bloat
 
+## Документация
+
+- [PostgreSQL: Routine Vacuuming](https://www.postgresql.org/docs/current/routine-vacuuming.html) — задачи `VACUUM`, autovacuum, freeze и обновления статистики.
+
 ## Паспорт задания
 
 - **Цель:** понять, почему старые tuple versions требуют обслуживания, и безопасно оценить vacuum/freeze/bloat без опасных команд.
@@ -272,6 +280,11 @@
 ---
 
 # День 3. WAL, recovery и TOAST
+
+## Документация
+
+- [PostgreSQL: WAL Introduction](https://www.postgresql.org/docs/current/wal-intro.html) — журнал предзаписи и восстановление после сбоя.
+- [PostgreSQL: TOAST](https://www.postgresql.org/docs/current/storage-toast.html) — хранение больших значений столбцов.
 
 ## Паспорт задания
 
@@ -382,6 +395,11 @@ application change → WAL record → WAL flush → commit acknowledged
 
 # День 4. Functions, procedures и triggers
 
+## Документация
+
+- [PostgreSQL: Extending SQL](https://www.postgresql.org/docs/current/extend.html) — функции, процедуры и расширение поведения базы.
+- [PostgreSQL: Triggers](https://www.postgresql.org/docs/current/triggers.html) — модель выполнения триггеров.
+
 ## Паспорт задания
 
 - **Цель:** размещать логику в базе только при ясной выгоде и понимать транзакционные последствия routines/triggers.
@@ -473,6 +491,10 @@ application change → WAL record → WAL flush → commit acknowledged
 ---
 
 # День 5. Partitioning
+
+## Документация
+
+- [PostgreSQL: Table Partitioning](https://www.postgresql.org/docs/current/ddl-partitioning.html) — декларативное секционирование таблиц и его ограничения.
 
 ## Паспорт задания
 
@@ -586,6 +608,10 @@ application change → WAL record → WAL flush → commit acknowledged
 
 # День 6. Scaling decisions
 
+## Документация
+
+- [PostgreSQL: High Availability, Load Balancing, and Replication](https://www.postgresql.org/docs/current/high-availability.html) — варианты репликации и масштабирования чтения.
+
 ## Паспорт задания
 
 - **Цель:** выбирать репликацию, sharding и расширения по требованиям согласованности, доступности и эксплуатации.
@@ -692,6 +718,10 @@ application change → WAL record → WAL flush → commit acknowledged
 ---
 
 # День 7. Итоговый PostgreSQL readiness audit
+
+## Документация
+
+- [PostgreSQL: Monitoring Database Activity](https://www.postgresql.org/docs/current/monitoring.html) — системные представления и показатели для итогового аудита готовности.
 
 ## Паспорт задания
 

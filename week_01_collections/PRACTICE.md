@@ -42,6 +42,10 @@
 
 ## День 1. Создание, чтение и изменение списков
 
+### Документация
+
+- [Python Tutorial: More on Lists](https://docs.python.org/3/tutorial/datastructures.html#more-on-lists) — операции и методы списков.
+
 Файл: `day_01_lists.py`
 
 ### Паспорт дня
@@ -166,6 +170,10 @@ models[10]
 
 ## День 2. Обход и преобразование списков
 
+### Документация
+
+- [Python Tutorial: List Comprehensions](https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions) — построение новых списков на основе исходных данных.
+
 Файл: `day_02_list_processing.py`
 
 ### Паспорт дня
@@ -286,6 +294,10 @@ values = [3, -1, 0, -5, 8, -2]
 
 ## День 3. Кортежи и распаковка
 
+### Документация
+
+- [Python Tutorial: Tuples and Sequences](https://docs.python.org/3/tutorial/datastructures.html#tuples-and-sequences) — кортежи, последовательности и распаковка.
+
 Файл: `day_03_tuples.py`
 
 ### Паспорт дня
@@ -387,6 +399,10 @@ car = ("Toyota", "Camry", 2024, 31_000)
 ---
 
 ## День 4. Словари и группировка
+
+### Документация
+
+- [Python Tutorial: Dictionaries](https://docs.python.org/3/tutorial/datastructures.html#dictionaries) — создание, чтение и изменение словарей.
 
 Файл: `day_04_dicts.py`
 
@@ -536,6 +552,10 @@ inventory = {
 
 ## День 5. Множества
 
+### Документация
+
+- [Python Tutorial: Sets](https://docs.python.org/3/tutorial/datastructures.html#sets) — уникальные элементы и операции над множествами.
+
 Файл: `day_05_sets.py`
 
 ### Паспорт дня
@@ -649,6 +669,11 @@ discounted = {"Camry", "Model 3"}
 ---
 
 ## День 6. Comprehensions, встроенные функции, копирование и сложность
+
+### Документация
+
+- [Модуль `copy`](https://docs.python.org/3/library/copy.html) — различие поверхностного и глубокого копирования составных объектов.
+- [Built-in Functions](https://docs.python.org/3/library/functions.html) — справочник по встроенным функциям Python.
 
 Файл: `day_06_combinations.py`
 
@@ -800,6 +825,10 @@ discounted = {"Camry", "Model 3"}
 ---
 
 ## День 7. Итоговый проект «Аналитика автосалонов»
+
+### Документация
+
+- [Python Tutorial: Data Structures](https://docs.python.org/3/tutorial/datastructures.html) — повторение коллекций, используемых в проекте.
 
 Файл: `day_07_dealership_analytics.py`
 

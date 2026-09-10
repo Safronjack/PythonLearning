@@ -67,6 +67,11 @@ PostgreSQL-specific statements помечай комментарием `-- Postg
 
 # День 1. Реляционная модель, data types, `NULL` и DDL
 
+## Документация
+
+- [PostgreSQL: Data Definition](https://www.postgresql.org/docs/current/ddl.html) — таблицы, типы столбцов и основные DDL-операции.
+- [PostgreSQL: Data Types](https://www.postgresql.org/docs/current/datatype.html) — выбор типов данных PostgreSQL.
+
 ## Паспорт задания
 
 - **Цель:** перевести факты предметной области в таблицы, столбцы и ограничения с явным grain.
@@ -189,6 +194,10 @@ Meta-команды `.schema` разрешены только в ручном SQ
 
 # День 2. Keys, constraints и relationships
 
+## Документация
+
+- [PostgreSQL: Constraints](https://www.postgresql.org/docs/current/ddl-constraints.html) — первичные и внешние ключи, уникальность и проверки данных.
+
 ## Паспорт задания
 
 - **Цель:** закрепить идентичность строк и связи так, чтобы база сама запрещала некорректные данные.
@@ -307,6 +316,11 @@ Meta-команды `.schema` разрешены только в ручном SQ
 ---
 
 # День 3. `INSERT`, `UPDATE`, `DELETE` и базовый `SELECT`
+
+## Документация
+
+- [PostgreSQL: Data Manipulation](https://www.postgresql.org/docs/current/dml.html) — добавление, изменение и удаление строк.
+- [PostgreSQL: Queries](https://www.postgresql.org/docs/current/queries.html) — основы получения данных через `SELECT`.
 
 ## Паспорт задания
 
@@ -428,6 +442,11 @@ SELECT ... WHERE email = <driver placeholder>
 ---
 
 # День 4. Joins, subqueries, CTE и set operations
+
+## Документация
+
+- [PostgreSQL: Table Expressions](https://www.postgresql.org/docs/current/queries-table-expressions.html) — `FROM`, соединения таблиц и подзапросы.
+- [PostgreSQL: `WITH` Queries](https://www.postgresql.org/docs/current/queries-with.html) — общие табличные выражения CTE.
 
 ## Паспорт задания
 
@@ -555,6 +574,11 @@ WHERE value NOT IN (1, NULL)
 ---
 
 # День 5. Aggregates, `GROUP BY`, `HAVING` и window functions
+
+## Документация
+
+- [PostgreSQL: Aggregate Functions](https://www.postgresql.org/docs/current/functions-aggregate.html) — агрегаты для групп данных.
+- [PostgreSQL Tutorial: Window Functions](https://www.postgresql.org/docs/current/tutorial-window.html) — вычисления по окну строк.
 
 ## Паспорт задания
 
@@ -688,6 +712,10 @@ Running total должен иметь явный `ROWS BETWEEN UNBOUNDED PRECEDI
 ---
 
 # День 6. Normalization, views и первая ERD
+
+## Документация
+
+- [PostgreSQL: `CREATE VIEW`](https://www.postgresql.org/docs/current/sql-createview.html) — создание представлений поверх запросов.
 
 ## Паспорт задания
 
@@ -863,6 +891,10 @@ sale_report(
 ---
 
 # День 7. Итоговый PostgreSQL-прототип базы проекта
+
+## Документация
+
+- [PostgreSQL Documentation](https://www.postgresql.org/docs/current/index.html) — официальный справочник по схеме, ограничениям и запросам итогового прототипа.
 
 ## Паспорт задания
 

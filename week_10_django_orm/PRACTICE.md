@@ -58,6 +58,10 @@ Next correction:
 
 # День 1. Models, fields и правила данных
 
+## Документация
+
+- [Django: Models](https://docs.djangoproject.com/en/5.2/topics/db/models/) — описание моделей, полей и правил данных.
+
 ## Паспорт задания
 
 - **Цель:** перевести основные сущности автосалона в Django models и выбрать типы fields по смыслу данных.
@@ -159,6 +163,11 @@ Country fields выполняются через согласованную ве
 
 # День 2. Связи и промежуточные models
 
+## Документация
+
+- [Django: Many-to-many relationships](https://docs.djangoproject.com/en/5.2/topics/db/examples/many_to_many/) — связи многие-ко-многим и работа с relation API.
+- [Django: Extra fields on many-to-many relationships](https://docs.djangoproject.com/en/5.2/topics/db/models/#extra-fields-on-many-to-many-relationships) — промежуточные модели с дополнительными полями.
+
 ## Паспорт задания
 
 - **Цель:** спроектировать прямые и обратные связи без потери данных самой связи.
@@ -253,6 +262,10 @@ Country fields выполняются через согласованную ве
 
 # День 3. Schema migrations и data migrations
 
+## Документация
+
+- [Django: Migrations](https://docs.djangoproject.com/en/5.2/topics/migrations/) — schema migrations, data migrations и история состояния моделей.
+
 ## Паспорт задания
 
 - **Цель:** безопасно развивать заполненную schema и воспроизводить историю с нуля.
@@ -342,6 +355,11 @@ Country fields выполняются через согласованную ве
 
 # День 4. QuerySet и managers
 
+## Документация
+
+- [Django: Managers](https://docs.djangoproject.com/en/5.2/topics/db/managers/) — собственные managers и методы QuerySet.
+- [Django QuerySet API reference](https://docs.djangoproject.com/en/5.2/ref/models/querysets/) — ленивые запросы и операции QuerySet.
+
 ## Паспорт задания
 
 - **Цель:** писать предсказуемые цепочечные запросы и создать предметный custom QuerySet без скрытия rows.
@@ -429,6 +447,11 @@ Country fields выполняются через согласованную ве
 ---
 
 # День 5. `Q`, `F`, annotations и aggregates
+
+## Документация
+
+- [Django: Query Expressions](https://docs.djangoproject.com/en/5.2/ref/models/expressions/) — `F`, выражения и annotations.
+- [Django: Aggregation](https://docs.djangoproject.com/en/5.2/topics/db/aggregation/) — агрегаты, группировка и вычисляемые показатели.
 
 ## Паспорт задания
 
@@ -518,6 +541,11 @@ Country fields выполняются через согласованную ве
 ---
 
 # День 6. N+1, индексы и транзакционная конкурентность
+
+## Документация
+
+- [Django: Database access optimization](https://docs.djangoproject.com/en/5.2/topics/db/optimization/) — `select_related`, `prefetch_related`, индексы и анализ запросов.
+- [Django: Database transactions](https://docs.djangoproject.com/en/5.2/topics/db/transactions/) — атомарность и управление транзакциями.
 
 ## Паспорт задания
 
@@ -617,6 +645,10 @@ Country fields выполняются через согласованную ве
 ---
 
 # День 7. Итоговый ORM-прототип автосалона
+
+## Документация
+
+- [Django: Models](https://docs.djangoproject.com/en/5.2/topics/db/models/) — основной справочник для итоговой ORM-модели автосалона.
 
 ## Паспорт задания
 

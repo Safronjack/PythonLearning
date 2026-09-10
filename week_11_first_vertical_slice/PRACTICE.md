@@ -56,6 +56,10 @@ Next correction:
 
 # День 1. Контракт вертикального среза и baseline
 
+## Документация
+
+- [Django: Database transactions](https://docs.djangoproject.com/en/5.2/topics/db/transactions/) — границы атомарной бизнес-операции вертикального среза.
+
 ## Паспорт задания
 
 - **Цель:** превратить описание недели в однозначный поток данных, не меняя business code наугад.
@@ -141,6 +145,10 @@ Next correction:
 ---
 
 # День 2. Django admin для каталога и поставщика
+
+## Документация
+
+- [Django admin site](https://docs.djangoproject.com/en/5.2/ref/contrib/admin/) — регистрация моделей, list display, filters и поиск.
 
 ## Паспорт задания
 
@@ -236,6 +244,11 @@ Next correction:
 ---
 
 # День 3. Атомарный service закупки и command
+
+## Документация
+
+- [Django: Database transactions](https://docs.djangoproject.com/en/5.2/topics/db/transactions/) — реализация атомарного сервиса закупки.
+- [Django: Custom management commands](https://docs.djangoproject.com/en/5.2/howto/custom-management-commands/) — создание команды для запуска бизнес-сценария.
 
 ## Паспорт задания
 
@@ -336,6 +349,10 @@ Next correction:
 
 # День 4. Selector каталога и устранение N+1
 
+## Документация
+
+- [Django: Database access optimization](https://docs.djangoproject.com/en/5.2/topics/db/optimization/) — устранение N+1 и проверка числа запросов.
+
 ## Паспорт задания
 
 - **Цель:** построить переиспользуемый read query с правильным result и постоянным query budget.
@@ -424,6 +441,10 @@ Next correction:
 
 # День 5. Read-only JSON endpoint
 
+## Документация
+
+- [Django: `JsonResponse`](https://docs.djangoproject.com/en/5.2/ref/request-response/#jsonresponse-objects) — формирование корректного JSON HTTP-ответа.
+
 ## Паспорт задания
 
 - **Цель:** открыть optimized catalog через стабильный HTTP-contract без DRF и утечки данных.
@@ -511,6 +532,12 @@ Next correction:
 ---
 
 # День 6. Tests, logging и clean replay
+
+## Документация
+
+- [Django: Testing overview](https://docs.djangoproject.com/en/5.2/topics/testing/overview/) — структура и запуск тестов.
+- [Django: Logging](https://docs.djangoproject.com/en/5.2/howto/logging/) — настройка и использование журналирования.
+- [Django: Migrations](https://docs.djangoproject.com/en/5.2/topics/migrations/) — проверка воспроизводимости схемы с нуля.
 
 ## Паспорт задания
 
@@ -608,6 +635,10 @@ Next correction:
 ---
 
 # День 7. Итоговый вертикальный срез
+
+## Документация
+
+- [Django Documentation](https://docs.djangoproject.com/en/5.2/) — справочник по ORM, admin, views, тестам и другим слоям итогового среза.
 
 ## Паспорт задания
 

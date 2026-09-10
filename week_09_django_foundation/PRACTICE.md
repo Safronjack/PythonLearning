@@ -58,6 +58,10 @@ Next correction:
 
 # День 1. Создание project и карта приложений
 
+## Документация
+
+- [Django Tutorial: Creating a project](https://docs.djangoproject.com/en/5.2/intro/tutorial01/) — создание проекта, приложения и первичная структура файлов.
+
 ## Паспорт задания
 
 - **Цель:** создать минимальный Django project, увидеть обязанности сгенерированных файлов и заложить границы восьми apps.
@@ -174,6 +178,11 @@ app | владеет | не владеет | будущие зависимост
 ---
 
 # День 2. Environment, PostgreSQL и custom user до migrations
+
+## Документация
+
+- [Django: Settings](https://docs.djangoproject.com/en/5.2/topics/settings/) — устройство настроек и их загрузка.
+- [Django: Customizing authentication](https://docs.djangoproject.com/en/5.2/topics/auth/customizing/) — создание custom user model до первых миграций.
 
 ## Паспорт задания
 
@@ -301,6 +310,11 @@ POSTGRES_PORT
 
 # День 3. URL dispatcher, views и HTTP contract
 
+## Документация
+
+- [Django: URL dispatcher](https://docs.djangoproject.com/en/5.2/topics/http/urls/) — сопоставление URL с представлениями.
+- [Django: Writing views](https://docs.djangoproject.com/en/5.2/topics/http/views/) — формирование HTTP-ответов во views.
+
 ## Паспорт задания
 
 - **Цель:** провести request через namespaced URLconf во view и вернуть корректный HTTP response.
@@ -405,6 +419,12 @@ route | methods | success status | failure status | content type | body fields |
 
 # День 4. Templates, static, форма и admin
 
+## Документация
+
+- [Django: Templates](https://docs.djangoproject.com/en/5.2/topics/templates/) — шаблоны и передача контекста.
+- [Django: Working with forms](https://docs.djangoproject.com/en/5.2/topics/forms/) — обработка и проверка форм.
+- [Django admin site](https://docs.djangoproject.com/en/5.2/ref/contrib/admin/) — настройка административного интерфейса.
+
 ## Паспорт задания
 
 - **Цель:** отобразить server-rendered страницу, безопасно принять простую форму и настроить admin для custom user.
@@ -508,6 +528,10 @@ GET показывает пустую форму. POST с корректными
 
 # День 5. Request lifecycle и custom middleware
 
+## Документация
+
+- [Django: Middleware](https://docs.djangoproject.com/en/5.2/topics/http/middleware/) — порядок обработки request/response и создание middleware.
+
 ## Паспорт задания
 
 - **Цель:** увидеть порядок request/response-слоёв и добавить безопасный request ID и timing.
@@ -610,6 +634,12 @@ server interface → middleware layers → URL resolver → view → response la
 ---
 
 # День 6. Signals, security checks и smoke tests
+
+## Документация
+
+- [Django: Signals](https://docs.djangoproject.com/en/5.2/topics/signals/) — подключение и ограничения сигналов.
+- [Django deployment checklist](https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/) — встроенная проверка production-настроек.
+- [Django: Testing overview](https://docs.djangoproject.com/en/5.2/topics/testing/overview/) — базовые средства проверки приложения.
 
 ## Паспорт задания
 
@@ -740,6 +770,10 @@ Tests не требуют запущенного `runserver`.
 ---
 
 # День 7. Итоговый проект «Django Foundation»
+
+## Документация
+
+- [Django Documentation](https://docs.djangoproject.com/en/5.2/) — официальный справочник по компонентам, объединяемым в фундаменте проекта.
 
 ## Паспорт задания
 

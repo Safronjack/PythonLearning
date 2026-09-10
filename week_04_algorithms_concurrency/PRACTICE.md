@@ -26,6 +26,11 @@
 
 ## День 1. Big O, измерения и поиск
 
+### Документация
+
+- [Модуль `timeit`](https://docs.python.org/3/library/timeit.html) — корректное измерение времени выполнения небольших фрагментов кода.
+- [Модуль `bisect`](https://docs.python.org/3/library/bisect.html) — двоичный поиск позиции в отсортированной последовательности.
+
 Файл: `day_01_complexity_search.py`.
 
 ### Паспорт дня
@@ -126,6 +131,11 @@
 
 ## День 2. Стек, очередь, heap, дерево и простые сортировки
 
+### Документация
+
+- [`collections.deque`](https://docs.python.org/3/library/collections.html#collections.deque) — эффективная реализация очереди и стека.
+- [Модуль `heapq`](https://docs.python.org/3/library/heapq.html) — очередь с приоритетом на основе кучи.
+
 Файл: `day_02_structures_sorts.py`.
 
 ### Паспорт дня
@@ -207,6 +217,10 @@
 ---
 
 ## День 3. Рекурсия, продвинутые сортировки и medium-задачи
+
+### Документация
+
+- [Sorting Techniques](https://docs.python.org/3/howto/sorting.html) — встроенная сортировка, ключи и устойчивость результата.
 
 Файл: `day_03_recursion_advanced_sorts.py`.
 
@@ -306,6 +320,11 @@
 
 ## День 4. Память CPython и профилирование
 
+### Документация
+
+- [Модуль `tracemalloc`](https://docs.python.org/3/library/tracemalloc.html) — отслеживание выделения памяти в Python.
+- [The Python Profilers](https://docs.python.org/3/library/profile.html) — профилирование времени выполнения.
+
 Файл: `day_04_memory_profiling.py`.
 
 ### Паспорт дня
@@ -403,6 +422,10 @@
 ---
 
 ## День 5. GIL, потоки, процессы и futures
+
+### Документация
+
+- [Модуль `concurrent.futures`](https://docs.python.org/3/library/concurrent.futures.html) — единый интерфейс запуска задач в потоках и процессах.
 
 Файл: `day_05_threads_processes.py`.
 
@@ -503,6 +526,10 @@
 
 ## День 6. `asyncio`, coroutine, Task, Future и event loop
 
+### Документация
+
+- [Модуль `asyncio`](https://docs.python.org/3/library/asyncio.html) — асинхронное выполнение, задачи и цикл событий.
+
 Файл: `day_06_asyncio.py`.
 
 ### Паспорт дня
@@ -598,6 +625,11 @@
 ---
 
 ## День 7. Итоговый проект «Task Dispatcher»
+
+### Документация
+
+- [Модуль `concurrent.futures`](https://docs.python.org/3/library/concurrent.futures.html) — исполнители задач и объекты `Future` для итогового диспетчера.
+- [Модуль `asyncio`](https://docs.python.org/3/library/asyncio.html) — асинхронная ветка итогового проекта.
 
 Каталог: `day_07_task_dispatcher/`.
 

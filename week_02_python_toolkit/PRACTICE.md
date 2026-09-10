@@ -21,6 +21,10 @@
 
 ## День 1. Параметры, аргументы и контракт функции
 
+### Документация
+
+- [Python Tutorial: More on Defining Functions](https://docs.python.org/3/tutorial/controlflow.html#more-on-defining-functions) — виды параметров и способы передачи аргументов.
+
 Файл: `day_01_function_arguments.py`
 
 ### Паспорт дня
@@ -89,6 +93,10 @@ calculate_final_price(price, quantity, discount_percent=0)
 
 ## День 2. LEGB и замыкания
 
+### Документация
+
+- [Execution model: Naming and binding](https://docs.python.org/3/reference/executionmodel.html#naming-and-binding) — области видимости и поиск имён в Python.
+
 Файл: `day_02_scopes_closures.py`
 
 ### Паспорт дня
@@ -139,6 +147,10 @@ make_discount_calculator(discount_percent)
 ---
 
 ## День 3. Функции как объекты и декораторы
+
+### Документация
+
+- [Python Glossary: decorator](https://docs.python.org/3/glossary.html#term-decorator) — официальное определение и форма применения декоратора.
 
 Файл: `day_03_decorators.py`
 
@@ -193,6 +205,11 @@ Wrapper должен поддерживать позиционные и имен
 
 ## День 4. Модули, пакет и исключения
 
+### Документация
+
+- [Python Tutorial: Modules](https://docs.python.org/3/tutorial/modules.html) — импорт, модули и организация пакетов.
+- [Python Tutorial: Errors and Exceptions](https://docs.python.org/3/tutorial/errors.html) — создание и обработка исключений.
+
 Файлы: `day_04_modules_exceptions.py`, `day_04_helpers.py`.
 
 ### Паспорт дня
@@ -243,6 +260,10 @@ Wrapper должен поддерживать позиционные и имен
 ---
 
 ## День 5. Iterable, iterator и generator
+
+### Документация
+
+- [Iterator Types](https://docs.python.org/3/library/stdtypes.html#iterator-types) — протокол итератора и поведение итерируемых объектов.
 
 Файл: `day_05_iterators_generators.py`
 
@@ -300,6 +321,12 @@ iter_active_sales → iter_valid_quantities → iter_expensive_sales
 ---
 
 ## День 6. Контекстные менеджеры, файлы, JSON и Decimal
+
+### Документация
+
+- [Модуль `contextlib`](https://docs.python.org/3/library/contextlib.html) — инструменты для контекстных менеджеров.
+- [Модуль `json`](https://docs.python.org/3/library/json.html) — чтение и запись JSON.
+- [Модуль `decimal`](https://docs.python.org/3/library/decimal.html) — точная десятичная арифметика.
 
 Файл: `day_06_files_serialization.py`.
 
@@ -359,6 +386,10 @@ iter_active_sales → iter_valid_quantities → iter_expensive_sales
 ---
 
 ## День 7. Итоговый проект «Sales Pipeline»
+
+### Документация
+
+- [Python Tutorial: Packages](https://docs.python.org/3/tutorial/modules.html#packages) — организация итоговой программы как пакета модулей.
 
 Каталог: `day_07_sales_pipeline/`.
 

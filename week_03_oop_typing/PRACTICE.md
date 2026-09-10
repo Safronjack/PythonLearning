@@ -26,6 +26,10 @@
 
 ## День 1. Классы, экземпляры, атрибуты и методы
 
+### Документация
+
+- [Python Tutorial: Classes](https://docs.python.org/3/tutorial/classes.html) — основы классов, экземпляров, атрибутов и методов.
+
 Файл: `day_01_classes_objects.py`.
 
 ### Паспорт дня
@@ -123,6 +127,10 @@ change_price(new_price: Decimal) -> None
 
 ## День 2. Инкапсуляция, свойства и виды методов
 
+### Документация
+
+- [Built-in Functions: `property`](https://docs.python.org/3/library/functions.html#property) — управление доступом к атрибутам через свойства.
+
 Файл: `day_02_encapsulation_properties.py`.
 
 ### Паспорт дня
@@ -204,6 +212,10 @@ withdraw(amount) -> None
 ---
 
 ## День 3. Композиция, наследование, полиморфизм и ABC
+
+### Документация
+
+- [Модуль `abc`](https://docs.python.org/3/library/abc.html) — абстрактные базовые классы и методы.
 
 Файл: `day_03_relationships_polymorphism.py`.
 
@@ -289,6 +301,12 @@ count() -> int
 ---
 
 ## День 4. Dataclass, Enum и магические методы
+
+### Документация
+
+- [Модуль `dataclasses`](https://docs.python.org/3/library/dataclasses.html) — декларативное описание классов данных.
+- [Модуль `enum`](https://docs.python.org/3/library/enum.html) — перечисления.
+- [Data model: Special method names](https://docs.python.org/3/reference/datamodel.html#special-method-names) — магические методы и протоколы объектов.
 
 Файл: `day_04_dataclasses_enums_magic.py`.
 
@@ -382,6 +400,10 @@ __contains__
 
 ## День 5. MRO, `super()` и осторожное наследование
 
+### Документация
+
+- [The Python 2.3 Method Resolution Order](https://docs.python.org/3/howto/mro.html) — алгоритм MRO, который применяется и в современном Python.
+
 Файл: `day_05_mro_super.py`.
 
 ### Паспорт дня
@@ -455,6 +477,10 @@ Base
 ---
 
 ## День 6. Typing, Protocol, SOLID и dependency injection
+
+### Документация
+
+- [Модуль `typing`](https://docs.python.org/3/library/typing.html) — аннотации типов и структурные протоколы.
 
 Файл: `day_06_typing_solid_di.py`.
 
@@ -543,6 +569,10 @@ Base
 ---
 
 ## День 7. Итоговый проект «Предметная модель автосалона»
+
+### Документация
+
+- [Python Tutorial: Classes](https://docs.python.org/3/tutorial/classes.html) — повторение ООП-конструкций итоговой предметной модели.
 
 Каталог: `day_07_dealership_domain/`.
 

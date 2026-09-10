@@ -34,6 +34,12 @@
 
 # День 1. Путь web-запроса: URL, DNS, TCP, TLS и байты
 
+## Документация
+
+- [Модуль `urllib.parse`](https://docs.python.org/3/library/urllib.parse.html) — устройство и разбор URL.
+- [Модуль `socket`](https://docs.python.org/3/library/socket.html) — сетевые соединения и адреса.
+- [Модуль `ssl`](https://docs.python.org/3/library/ssl.html) — TLS-защита сетевого соединения.
+
 ## Паспорт задания
 
 - **Цель:** проследить путь запроса от URL до байтов и доказать ключевые свойства небольшими локальными опытами.
@@ -188,6 +194,11 @@ WORLD
 ---
 
 # День 2. HTTP semantics, JSON, cookies и cache
+
+## Документация
+
+- [RFC 9110: HTTP Semantics](https://www.rfc-editor.org/rfc/rfc9110.html) — основной стандарт семантики HTTP: методы, статусы, заголовки и кеширование.
+- [Модуль `json`](https://docs.python.org/3/library/json.html) — сериализация данных в JSON и обратно.
 
 ## Паспорт задания
 
@@ -355,6 +366,11 @@ def conditional_response(
 
 # День 3. REST/RPC/GraphQL и граница WSGI/ASGI
 
+## Документация
+
+- [PEP 3333: WSGI for Python 3](https://peps.python.org/pep-3333/) — официальный интерфейс между WSGI-сервером и Python-приложением.
+- [ASGI Specification](https://asgi.readthedocs.io/en/latest/specs/main.html) — модель ASGI-приложения, соединения и событий.
+
 ## Паспорт задания
 
 - **Цель:** различить стиль API и интерфейс web-сервера, затем вызвать WSGI/ASGI приложение напрямую.
@@ -472,6 +488,11 @@ async def asgi_app(scope, receive, send) -> None:
 ---
 
 # День 4. Web security и модели аутентификации
+
+## Документация
+
+- [OWASP Authentication Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html) — практические требования к безопасной аутентификации.
+- [OWASP Session Management Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html) — безопасная работа с пользовательскими сессиями.
 
 ## Паспорт задания
 
@@ -651,6 +672,10 @@ def cors_headers(origin: str | None, allowed_origins: set[str]) -> list[tuple[st
 
 # День 5. Linux/Unix shell для backend-разработчика
 
+## Документация
+
+- [GNU Bash Reference Manual](https://www.gnu.org/software/bash/manual/bash.html) — команды, перенаправления, конвейеры и shell-скрипты.
+
 ## Паспорт задания
 
 - **Цель:** безопасно автоматизировать файловые и процессные операции внутри строго ограниченной учебной папки.
@@ -786,6 +811,10 @@ Script должен:
 ---
 
 # День 6. Git, pull request и процессы разработки
+
+## Документация
+
+- [Git Reference](https://git-scm.com/docs) — официальный справочник по командам и рабочим процессам Git.
 
 ## Паспорт задания
 
@@ -947,6 +976,10 @@ week_05_web_linux_git/day_06_git_lab/sandbox_repo/
 ---
 
 # День 7. Итоговый локальный WSGI JSON API
+
+## Документация
+
+- [PEP 3333: WSGI for Python 3](https://peps.python.org/pep-3333/) — контракт, которому должен соответствовать итоговый WSGI API.
 
 ## Паспорт задания
 

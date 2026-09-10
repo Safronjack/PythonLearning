@@ -63,6 +63,11 @@ Correction or next check:
 
 # День 1. Подключение DRF и путь запроса
 
+## Документация
+
+- [Django REST framework: Requests](https://www.django-rest-framework.org/api-guide/requests/) — объект DRF request и разбор входных данных.
+- [Django REST framework: Responses](https://www.django-rest-framework.org/api-guide/responses/) — формирование API-ответа и content negotiation.
+
 ## Паспорт задания
 
 - **Цель:** подключить DRF и на маленьких endpoints увидеть различие Request, parser, Response, renderer и content negotiation.
@@ -151,6 +156,10 @@ Correction or next check:
 ---
 
 # День 2. Serializers и validation
+
+## Документация
+
+- [Django REST framework: Serializers](https://www.django-rest-framework.org/api-guide/serializers/) — преобразование данных и уровни валидации serializer.
 
 ## Паспорт задания
 
@@ -251,6 +260,11 @@ Correction or next check:
 
 # День 3. APIView, GenericAPIView, mixins и ViewSets
 
+## Документация
+
+- [Django REST framework: Generic views](https://www.django-rest-framework.org/api-guide/generic-views/) — generic views и mixins.
+- [Django REST framework: ViewSets](https://www.django-rest-framework.org/api-guide/viewsets/) — группировка API-действий во ViewSet.
+
 ## Паспорт задания
 
 - **Цель:** реализовать один read flow несколькими DRF abstractions и обоснованно выбрать уровень абстракции для итогового API.
@@ -340,6 +354,11 @@ Correction or next check:
 ---
 
 # День 4. Routers, CRUD и permissions
+
+## Документация
+
+- [Django REST framework: Routers](https://www.django-rest-framework.org/api-guide/routers/) — автоматическое построение URL для ViewSets.
+- [Django REST framework: Permissions](https://www.django-rest-framework.org/api-guide/permissions/) — проверка доступа на уровне запроса и объекта.
 
 ## Паспорт задания
 
@@ -440,6 +459,11 @@ Correction or next check:
 
 # День 5. Filtering, search, ordering и pagination
 
+## Документация
+
+- [Django REST framework: Filtering](https://www.django-rest-framework.org/api-guide/filtering/) — фильтрация, поиск и сортировка коллекций.
+- [Django REST framework: Pagination](https://www.django-rest-framework.org/api-guide/pagination/) — разбиение больших списков на страницы.
+
 ## Паспорт задания
 
 - **Цель:** дать клиенту ограниченное управление catalog queryset без нестабильных страниц, утечки полей и N+1.
@@ -539,6 +563,11 @@ Correction or next check:
 
 # День 6. Ошибки, OpenAPI и contract tests
 
+## Документация
+
+- [Django REST framework: Exceptions](https://www.django-rest-framework.org/api-guide/exceptions/) — единый формат ошибок и custom exception handler.
+- [drf-spectacular: Workflow and schema customization](https://drf-spectacular.readthedocs.io/en/latest/customization.html) — уточнение OpenAPI-схемы.
+
 ## Паспорт задания
 
 - **Цель:** сделать ошибки машиночитаемыми и доказать соответствие OpenAPI фактическому API.
@@ -637,6 +666,10 @@ Correction or next check:
 ---
 
 # День 7. Итоговый DRF API
+
+## Документация
+
+- [Django REST framework: API Guide](https://www.django-rest-framework.org/api-guide/) — сводный официальный справочник по компонентам итогового API.
 
 ## Паспорт проекта
 

@@ -82,6 +82,10 @@ Decision: keep/reject
 
 # День 1. Transactions, ACID, rollback и savepoints
 
+## Документация
+
+- [PostgreSQL Tutorial: Transactions](https://www.postgresql.org/docs/current/tutorial-transactions.html) — границы транзакций, `COMMIT`, `ROLLBACK` и savepoints.
+
 ## Паспорт задания
 
 - **Цель:** управлять границей транзакции и доказать атомарность через состояния до, внутри и после неё.
@@ -193,6 +197,10 @@ Failing statement после исследования оставь закомм�
 ---
 
 # День 2. Isolation levels и read anomalies
+
+## Документация
+
+- [PostgreSQL: Transaction Isolation](https://www.postgresql.org/docs/current/transaction-iso.html) — уровни изоляции и допустимые аномалии чтения.
 
 ## Паспорт задания
 
@@ -336,6 +344,10 @@ Failing statement после исследования оставь закомм�
 
 # День 3. Lost update, row locks и deadlock
 
+## Документация
+
+- [PostgreSQL: Explicit Locking](https://www.postgresql.org/docs/current/explicit-locking.html) — блокировки строк и таблиц, deadlocks и advisory locks.
+
 ## Паспорт задания
 
 - **Цель:** защищать конкурентное изменение остатков с помощью атомарного SQL, блокировок и ограниченного retry.
@@ -475,6 +487,10 @@ SET balance = balance + delta
 ---
 
 # День 4. B-tree, Hash, GIN, GiST, SP-GiST и BRIN
+
+## Документация
+
+- [PostgreSQL: Index Types](https://www.postgresql.org/docs/current/indexes-types.html) — назначение и различия типов индексов.
 
 ## Паспорт задания
 
@@ -628,6 +644,11 @@ SET balance = balance + delta
 ---
 
 # День 5. Multicolumn, expression, partial и covering indexes
+
+## Документация
+
+- [PostgreSQL: Multicolumn Indexes](https://www.postgresql.org/docs/current/indexes-multicolumn.html) — порядок столбцов и работа составных индексов.
+- [PostgreSQL: Partial Indexes](https://www.postgresql.org/docs/current/indexes-partial.html) — индексация выбранной части строк.
 
 ## Паспорт задания
 
@@ -794,6 +815,11 @@ Workloads:
 
 # День 6. `EXPLAIN`, planner statistics и N+1
 
+## Документация
+
+- [PostgreSQL: Using `EXPLAIN`](https://www.postgresql.org/docs/current/using-explain.html) — чтение плана запроса и сравнение способов выполнения.
+- [PostgreSQL: Statistics Used by the Planner](https://www.postgresql.org/docs/current/planner-stats.html) — статистика, на которой основан выбор плана.
+
 ## Паспорт задания
 
 - **Цель:** читать план снизу вверх, находить подтверждённое узкое место и устранять N+1 с проверкой результата.
@@ -952,6 +978,10 @@ Workloads:
 ---
 
 # День 7. Итоговый transaction/performance audit проекта
+
+## Документация
+
+- [PostgreSQL: Performance Tips](https://www.postgresql.org/docs/current/performance-tips.html) — официальный обзор анализа и улучшения производительности запросов.
 
 ## Паспорт задания
 

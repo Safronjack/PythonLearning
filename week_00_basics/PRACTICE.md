@@ -61,6 +61,10 @@
 
 ## День 1. Первый файл, вывод и переменные
 
+### Документация
+
+- [Python Tutorial: Using the Python Interpreter](https://docs.python.org/3/tutorial/interpreter.html) — как запускать Python-код и работать с интерпретатором.
+
 Файл: `day_01_first_program.py`
 
 ### Паспорт дня
@@ -153,6 +157,10 @@ stock = 5
 ---
 
 ## День 2. Типы, арифметика, строки и ввод
+
+### Документация
+
+- [Built-in Types](https://docs.python.org/3/library/stdtypes.html) — числа, строки и другие встроенные типы Python.
 
 Файл: `day_02_types.py`
 
@@ -269,6 +277,10 @@ a + b * c
 
 ## День 3. Сравнения, логика и ветвление
 
+### Документация
+
+- [Python Tutorial: `if` Statements](https://docs.python.org/3/tutorial/controlflow.html#if-statements) — условия и ветвление программы.
+
 Файл: `day_03_conditions.py`
 
 ### Паспорт дня
@@ -366,6 +378,10 @@ a + b * c
 
 ## День 4. Циклы
 
+### Документация
+
+- [Python Tutorial: `for` Statements](https://docs.python.org/3/tutorial/controlflow.html#for-statements) — устройство цикла `for` и обход значений.
+
 Файл: `day_04_loops.py`
 
 ### Паспорт дня
@@ -442,6 +458,10 @@ a + b * c
 ---
 
 ## День 5. Функции
+
+### Документация
+
+- [Python Tutorial: Defining Functions](https://docs.python.org/3/tutorial/controlflow.html#defining-functions) — объявление функций, параметры и возврат результата.
 
 Файл: `day_05_functions.py`
 
@@ -536,6 +556,10 @@ if __name__ == "__main__":
 ---
 
 ## День 6. Ошибки, валидация и отладка
+
+### Документация
+
+- [Python Tutorial: Errors and Exceptions](https://docs.python.org/3/tutorial/errors.html) — виды ошибок и обработка исключений.
 
 Файл: `day_06_errors.py`
 
@@ -637,6 +661,10 @@ read_positive_integer(prompt)
 ---
 
 ## День 7. Итоговый проект «Калькулятор покупки автомобиля»
+
+### Документация
+
+- [Python Tutorial: More Control Flow Tools](https://docs.python.org/3/tutorial/controlflow.html) — повторение условий, циклов и функций, объединяемых в итоговом проекте.
 
 Файл: `day_07_car_purchase.py`
 
