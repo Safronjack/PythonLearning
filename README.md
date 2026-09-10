@@ -831,6 +831,8 @@ print("DEBUG:", price, type(price))
 
 ### Неделя 14. Авторизация
 
+- [полный модуль недели](week_14_authorization/README.md);
+
 - RBAC как основная модель ролей;
 - ABAC и PBAC — для понимания более сложных политик;
 - object-level permissions;
@@ -844,7 +846,11 @@ print("DEBUG:", price, type(price))
 | Управлять промоакциями | Нет | В рамках согласованной роли | Да |
 | Смотреть агрегированную статистику | Только свою | Только свою | Всю |
 
-Критерий этапа: API документирован, отрицательные сценарии прав проверены тестами, секреты не находятся в репозитории.
+Практика: семь последовательных дней — от inventory actors/routes, выбора единственного источника роли, permission matrix и threat model до RBAC через встроенные Django/DRF-механизмы, ownership и organization scopes, object-level permissions, ABAC/PBAC policies, повторных проверок внутри транзакционных services, role-specific статистики и adversarial/OpenAPI-аудита.
+
+Результат: `Authorized Dealership API`, проверенный по 48 позитивным, граничным и abuse-сценариям. Buyer работает только со своими Offer, покупками и статистикой; dealership/supplier operators ограничены своей организацией; balances и роли доступны только отдельным trusted admin actions. List scope применяется до фильтрации, pagination и aggregation, а старый JWT после отзыва роли использует актуальную database policy.
+
+Критерий этапа: API документирован, каждая значимая клетка матрицы имеет положительный или отрицательный runtime test, запрещённые запросы не создают side effects, секреты не находятся в репозитории, а в `week_14_authorization/ASSESSMENT.md` выдан допуск к неделе 15.
 
 ---
 
@@ -862,6 +868,39 @@ print("DEBUG:", price, type(price))
 - async-тесты при наличии async-кода;
 - coverage как индикатор, а не как цель;
 - TDD для бизнес-правил.
+
+### Неделя 15. Фундамент тестирования
+
+- [полный модуль недели](week_15_testing_foundation/README.md);
+- уровни unit, integration, API и граница будущего E2E;
+- pytest, pytest-django и совместимость с существующими `unittest`/Django tests;
+- assertions, exceptions, discovery и node IDs;
+- fixtures, scopes, `conftest.py`, deterministic factories и cleanup;
+- parametrization, markers, skip и strict xfail;
+- mock только на внешних границах и patch where looked up;
+- PostgreSQL/DRF integration, query budgets и branch coverage audit.
+
+Практика: семь последовательных дней — от inventory рисков, сравнения collection и compatibility gate pytest stack до unit tests с независимыми oracles, изолированных fixtures/factories, параметризованных границ, mock audit, реальных PostgreSQL/DRF проверок, smoke/regression markers и осмысленного анализа coverage.
+
+Результат: воспроизводимый `Dealership Test Foundation` с unit, integration, API и regression слоями, проверенный по 54 сценариям. Старые tests продолжают собираться; запрещённые запросы проверяются вместе с отсутствием side effects; database constraints и rollback доказываются PostgreSQL, а coverage используется как карта незакрытых critical branches.
+
+### Неделя 16. Продвинутая стратегия тестирования
+
+- [полный модуль недели](week_16_advanced_testing/README.md);
+- TDD red-green-refactor и characterization tests перед рискованным изменением;
+- PostgreSQL transaction/rollback и конкурентные проверки с отдельными connections;
+- явная синхронизация workers и bounded timeout вместо случайного `sleep()`;
+- управляемые clock, timezone, token/UUID и side effects после commit;
+- async inventory и async-тесты только при наличии реального async production path;
+- live-server end-to-end flows через local HTTP, routing, middleware, auth и test database;
+- диагностика flaky, order-, time- и random-dependent tests без retry masking;
+- query budgets, clean runs и итоговая regression strategy критических инвариантов.
+
+Практика: семь последовательных дней — от доказанного TDD-цикла и characterization test до PostgreSQL rollback/concurrency, deterministic time и provider boundaries, обоснованной async-ветки, live-server E2E, repeat/order/timezone/query audit и единого quality gate. Каждый день содержит точный паспорт задания, обязательные сценарии, журнал доказательств и ссылку на официальную документацию.
+
+Результат: `Dealership Quality Gate` с 60 фактически проверенными сценариями и 48 вопросами защиты. Gate воспроизводимо запускает unit, integration/API, transaction/concurrency и E2E слои, явно сообщает skipped/xfail/N/A/deferred и блокирует нарушение денежных, складских, permission и transaction инвариантов. Redis и Celery не добавляются раньше соответствующих недель; повторный Celery-запуск пока остаётся будущим контрактом.
+
+Критерий завершения: каждый день не ниже 7/10, итоговый проект не ниже 8/10, два одинаковых clean runs, минимум 36/48 за контроль понимания и запись «Допуск к неделе 17: да» в журнале недели 16.
 
 Минимальная матрица тестов:
 
@@ -883,14 +922,24 @@ print("DEBUG:", price, type(price))
 
 ### Неделя 17. Redis
 
-- архитектура key-value хранилища;
-- строки, hashes, sets, sorted sets и streams обзорно;
-- TTL и стратегии кэширования;
-- invalidation, cache stampede и защита от устаревших данных;
-- RDB и AOF;
-- Redis как cache, broker и result backend — это разные роли.
+- [полный модуль недели](week_17_redis_cache/README.md);
+- client-server и in-memory архитектура Redis, connections, pools и bounded timeouts;
+- strings/counters, hashes, sets, sorted sets и обзорный stream;
+- atomic command, pipeline, transaction и границы их гарантий;
+- безопасный versioned keyspace без PII, уникальный test namespace и точечная cleanup;
+- встроенный Django `RedisCache`, cache-aside, TTL, expiration и negative-cache sentinel;
+- authorization/filter scope в cache key и равенство hit/miss response contract;
+- invalidation через generation key только после PostgreSQL commit;
+- cache stampede, owner-safe single-flight, lock TTL, bounded wait и TTL jitter;
+- fail-open statistics при ожидаемом отказе cache без сокрытия programming/database errors;
+- RDB/AOF, `maxmemory`, eviction, Redis security и наблюдаемость;
+- Redis как cache, будущий broker и result backend — разные роли и политики.
 
-Практика: кэшировать дорогой endpoint статистики, инвалидировать кэш после изменения данных, измерить разницу.
+Практика: семь последовательных дней — от безопасного подключения и лаборатории основных data types до кэширования дорогого endpoint статистики, проверки miss/hit/TTL, invalidation после commit, защиты hot key от stampede, degraded behavior при Redis outage и operational runbook. Каждый день имеет точный паспорт, обязательные сценарии, журнал evidence и отдельный раздел официальной документации.
+
+Результат: `Cached Dealership Statistics API` с 56 фактически проверенными сценариями и 48 вопросами защиты. PostgreSQL остаётся source of truth; warm hit не вызывает дорогой loader, при доступном Redis committed write немедленно переключает generation, rollback не инвалидирует корректный cache, а invalidation outage становится наблюдаемым и ограничивается конечным TTL. Недоступный cache обрабатывается по ограниченной fail-open policy. Tests используют отдельный Redis/уникальный prefix и никогда не выполняют `FLUSHALL`, `FLUSHDB` или `KEYS *`.
+
+Критерий завершения: каждый день не ниже 7/10, итоговый проект не ниже 8/10, два одинаковых clean runs, минимум 36/48 за контроль понимания и запись «Допуск к неделе 18: да» в журнале недели 17.
 
 ### Неделя 18. Celery
 
